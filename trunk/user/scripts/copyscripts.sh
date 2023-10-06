@@ -111,3 +111,7 @@ mkdir -p /etc/storage/gfwlist
 cp -rf /etc_ro/gfwlist_list.conf /etc/storage/gfwlist/
 chmod 755 "/etc/storage/gfwlist/gfwlist_list.conf"
 fi
+if [ ! -f "/etc/storage/alist.sh" ] ; then
+cp -rf /etc_ro/alist.sh /etc/storage/
+chmod 755 "/etc/storage/alist.sh"
+fi
